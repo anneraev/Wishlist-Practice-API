@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+<!-- ======================practice========================== -->
+
+    <fieldset>
+      <label for="itemName">Item</label>
+      <input
+        type="text"
+        id="itemName"
+        placeholder="Enter name of item."
+        autofocus
+      />
+    </fieldset>
+    <fieldset>
+      <label for="storeName">Name of Store</label>
+      <input type="text" id="storeName" placeholder="Enter name of store." />
+    </fieldset>
+    <button id="saveItem">Save Wishlist</button>
+
+    <article id="wishList"></article>
+
+    <script src="./scripts/ApiManager.js"></script>
+    <script src="./scripts/DomManager.js"></script>
+    <script src="scripts/wishlist.js"></script>
+  </body>
+</html>
