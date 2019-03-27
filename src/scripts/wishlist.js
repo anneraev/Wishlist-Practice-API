@@ -15,6 +15,8 @@ document.querySelector("#saveItem").addEventListener("click", event => {
             storeName: storeNameNew
         }
 
+        console.log(newWishListEntry);
+
     //calls a function that posts the new object to the JSON database, and then gets the wishList from the database, then posts the wishlist in the same manner from before.
     postWishList(newWishListEntry)
         .then(() => getWishlist())
